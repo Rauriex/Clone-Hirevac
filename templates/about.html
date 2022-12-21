@@ -111,24 +111,24 @@
             Menu
           </h4>
           <ul>
-            <li>
+            <li class="active">
               <a href="{% url 'jobs:home' %}">
                 Home
               </a>
             </li>
-            <li class="active">
+            <li>
               <a href="{% url 'jobs:about' %}">
                 About
               </a>
             </li>
             <li>
-              <a href="search?position=&location=&name=&type=&category=&salary=#">
+              <a class="" href="search?position=&location=&name=&type=&category=&salary=#">
                 Jobs
               </a>
             </li>
           </ul>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-5" style="margin-right: 70px;">
           <h4>
             Jobs
           </h4>
@@ -137,7 +137,7 @@
             layout. The point of using Lorem Ipsum
           </p>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-4">
           <div class="info_social">
             <h4>
               Social Link
@@ -166,6 +166,7 @@
             </div>
           </div>
         </div>
+        {% comment %}
         <div class="col-md-4">
           <div class="info_form">
             <h4>
@@ -179,6 +180,7 @@
             </form>
           </div>
         </div>
+        {% endcomment %}
       </div>
     </div>
   </section>
